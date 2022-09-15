@@ -116,7 +116,7 @@ const Cards = () => {
               isVisible={isModal}
               title="Спасибо за игру! 	&#128522;"
               content={  <button className='button-restart mod' onClick={hadleGameRestart}>ПОВТОРИМ?</button>}
-              footer={ <> <p className='numberModal'>Сделано ходов: {moves} &#128519;</p><button className='clear'>Выход</button></>}
+              footer={ <> <p className='numberModal'>Сделано ходов: {moves} &#128519;</p><button className='clear' onClick={hadleGameRestart}>Выход</button></>}
               onClose={() => setModal(false)}
             />
           </div>
